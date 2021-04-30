@@ -40,6 +40,10 @@ def main():
           '%s/sample/libs/%s/uraniumvm_apitest' % (uvcpu_root, a)
         ], '%s/android_upacker_%s' % (file_dir(), a))
 
+    sysname = platform.system()
+    if sysname != 'Darwin':
+        return
+
     print('Packing iOS arm64...')
     do_pack([
       '%s/ios/arm64/liburaniumvm.dylib' % (uvcpu_root),
