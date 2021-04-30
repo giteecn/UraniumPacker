@@ -1,37 +1,55 @@
 # UraniumPacker
 
-#### 介绍
+### Description
 A macho/elf compression shell that can make multi-binary into one.
 
-#### 软件架构
-软件架构说明
+||Android|iOS|macOS|
+|-|-|-|-|
+|arm|Yes|No|No|
+|arm64|Yes|Yes|Yes|
+|x86|Yes|No|No|
+|x86_64|Yes|No|Yes|
 
 
-#### 安装教程
+### License
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+UraniumPacker is developed by YunYoo(云铀子), all rights reserved.
 
-#### 使用说明
+ * A.Dynamic use (liburaniumpacker.dylib/liburaniumpacker.so) is free;
+ * B.Static use (liburaniumpacker.a) should pay for a license;
+ * 1.动态连接(liburaniumpacker.dylib/liburaniumpacker.so)免费；
+ * 2.静态连接(liburaniumpacker.a)请购买授权；
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+Follow us for update or bug report:
 
-#### 参与贡献
+|Platform|Account|
+|-|-|
+|Email|liubaijiang@yunyoo.cn|
+|公众号|刘柏江|
+|头条抖音|刘柏江|
+|微博|刘柏江VM|
+|码云|https://gitee.com/geekneo/|
+|码云|https://gitee.com/yunyoo/|
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+### Instructions
 
+```
+$ ./mac-x64/upacker 
+OVERVIEW: UraniumPacker v1.0.0 , A MachO/ELF Compress & Pack Tool.
 
-#### 特技
+USAGE: upacker [options] <input files>
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+OPTIONS:
+  --help                   - Display available options (--help-hidden for more)
+  --packer-input=<string>  - UraniumPacker input macho/elf file
+  --packer-libdir=<string> - UraniumPacker library search directory
+  --packer-output=<string> - UraniumPacker output result file
+  --version                - Display the version of this program
+```
+
+### Version History
+2021/4/30:
+ * 发布V1.0.0[preview0];
+ * 1.支持Android arm/arm64/x86/x86_64;
+ * 2.支持macOS arm64/x86_64;
+ * 3.支持iOS arm64;
