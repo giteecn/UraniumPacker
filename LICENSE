@@ -1,0 +1,7 @@
+UraniumPacker is developed by YunYoo(云铀子), all rights reserved.
+
+ * A.Dynamic use (liburaniumpacker.dylib/liburaniumpacker.so) is free;
+ * B.Static use (liburaniumpacker.a) should pay for a license;
+ * 1.动态连接(liburaniumpacker.dylib/liburaniumpacker.so)免费；
+ * 2.静态连接(liburaniumpacker.a)请购买授权；
+ 
