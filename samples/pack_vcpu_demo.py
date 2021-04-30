@@ -5,7 +5,7 @@ import platform
 def file_dir():
     dir = os.path.dirname(__file__)
     if len(dir) == 0:
-        dir = '/'
+        dir = './'
         return dir
     return dir
 
