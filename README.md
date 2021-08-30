@@ -25,8 +25,8 @@ Follow us for update or bug report:
 |Platform|Account|
 |-|-|
 |Email|liubaijiang@yunyoo.cn|
-|公众号|刘柏江|
-|头条抖音|刘柏江|
+|公众号|江哥说安全|
+|头条抖音|刘柏江/江哥说安全|
 |微博|刘柏江VM|
 |码云|https://gitee.com/geekneo/|
 |码云|https://gitee.com/yunyoo/|
@@ -48,6 +48,11 @@ OPTIONS:
 ```
 
 ### Version History
+2021/8/30:
+ * 发布V1.0.0[preview1];
+ * 1.优化二进制分析模块;
+ * 2.修复桩函数寄存器覆盖导致运行时崩溃的问题；
+
 2021/4/30:
  * 发布V1.0.0[preview0];
  * 1.支持Android arm/arm64/x86/x86_64;
